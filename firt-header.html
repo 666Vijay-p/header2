@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Header</title>
+  <style>
+    body{
+      margin: 0;
+      background: #eee;
+      font-family: Besley,serif;
+    }
+    .header {
+      display: flex;
+       align-items: center;
+      justify-content: space-between;
+      font-family: monospace;
+      background: papayawhip;
+      
+      justify-content: space-between; 
+      justify-content: space-between;
+      padding: 8px;
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: 900;
+      color: tomato;
+      background: white;
+      padding: 4px 32px;
+    }
+
+    .left-links, .right-links {
+      display: flex;
+      
+    }
+
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      padding: 0;
+      margin: 0 ;
+     
+      gap: 16px;
+      
+    }
+
+    li {
+      margin: 0 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .left, .right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="left-links">
+      <ul>
+        <li><a href="#">ONE</a></li>
+        <li><a href="#">TWO</a></li>
+        <li><a href="#">THREE</a></li>
+      </ul>
+    </div>
+    <div class="logo">LOGO</div>
+    <div class="right-links">
+      <ul>
+        <li><a href="#">FOUR</a></li>
+        <li><a href="#">FIVE</a></li>
+        <li><a href="#">SIX</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
